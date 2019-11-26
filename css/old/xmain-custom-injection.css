@@ -1,0 +1,447 @@
+/******************CSS INJECTION 
+ ***********************/
+/***
+Date : 
+Web Designer: William L. Carrasca Jr.
+Company: Enggware LTD under Enggsol Engineering Solution
+Email: william@enggware.com 
+Contacts: +639212632325
+Skype: williamcarrascajr
+ ***/
+body {
+  font-size: 14px; }
+
+ul {
+  list-style: none; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+div,
+ul li,
+a {
+  letter-spacing: inherit !important; }
+
+header.header {
+  border: 0; }
+  header.header.headroom.headroom--not-top {
+    background: rgba(0, 0, 0, 0.9);
+    border: 0; }
+
+.copyright__list li {
+  padding: 15px; }
+
+.copyright__list {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-wrap: wrap !important;
+  flex-wrap: wrap !important;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important; }
+
+.site-footer .footer-column {
+  max-width: 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  text-align: center; }
+  .site-footer .footer-column .widget_nav_menu .menu {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important; }
+    .site-footer .footer-column .widget_nav_menu .menu li {
+      padding: 10px; }
+
+.project-taxonomy,
+.fp-taxonomy-wrapper {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-wrap: wrap !important;
+  flex-wrap: wrap !important;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important; }
+  .project-taxonomy .fpt-holder,
+  .fp-taxonomy-wrapper .fpt-holder {
+    padding: 10px; }
+    .project-taxonomy .fpt-holder img,
+    .fp-taxonomy-wrapper .fpt-holder img {
+      width: 40px;
+      margin-right: 6px; }
+
+.fp-wrapper {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-wrap: wrap !important;
+  flex-wrap: wrap !important;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+  margin: 50px 0; }
+  .fp-wrapper .fp-inner-holder {
+    width: calc(100%/4); }
+
+.forbes-project__items {
+  height: 200px;
+  overflow: hidden;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-wrap: wrap !important;
+  flex-wrap: wrap !important;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  padding: 10px;
+  background-size: cover !important;
+  position: relative;
+  width: calc(100%/3);
+  margin-bottom: 20px; }
+  .forbes-project__items:before {
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: rgba(0, 0, 0, 0.6);
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: 1; }
+  .forbes-project__items a {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
+    -webkit-box-align: flex-end;
+    -ms-flex-align: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    font-size: .9em;
+    padding: 10px;
+    text-align: left;
+    position: relative;
+    z-index: 2;
+    color: #fff !important; }
+
+.services-display__items {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-wrap: wrap !important;
+  flex-wrap: wrap !important;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important; }
+
+.dwqa-breadcrumbs {
+  background: #262626 !important; }
+  .dwqa-breadcrumbs a {
+    padding: 10px;
+    display: inline-block;
+    color: #fff; }
+  .dwqa-breadcrumbs .dwqa-current {
+    color: #f36a22 !important; }
+
+h2.vc_custom_heading {
+  color: #f36a22 !important;
+  padding-bottom: 10px;
+  font-size: 3em;
+  text-transform: uppercase !important;
+  font-weight: bold; }
+
+.wx-heading.align-left,
+.wx-button.align-left {
+  text-align: left; }
+
+.wx-heading.align-center,
+.wx-button.align-center {
+  text-align: center; }
+
+.wx-heading.align-right,
+.wx-button.align-right {
+  text-align: right; }
+
+.wx-heading {
+  text-decoration: none !important;
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 55px; }
+  @media only screen and (max-width: 1000px) {
+    .wx-heading {
+      margin-bottom: 10px; } }
+  .wx-heading .image {
+    width: 200px;
+    margin: auto; }
+  .wx-heading .primary-heading,
+  .wx-heading .secondary-heading,
+  .wx-heading .third-heading,
+  .wx-heading .fourth-heading {
+    display: inline-block;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif !important;
+    position: relative; }
+  .wx-heading .primary-heading {
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    padding-bottom: 15px; }
+    .wx-heading .primary-heading::after {
+      width: 300px;
+      position: absolute;
+      content: '';
+      left: 0;
+      bottom: 0;
+      height: 2px;
+      display: block;
+      background: #fff !important; }
+  .wx-heading .secondary-heading {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #f36a22 !important; }
+    .wx-heading .secondary-heading::before {
+      display: none; }
+  .wx-heading .third-heading {
+    font-size: 1.3em;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #fff !important;
+    font-family: "Roboto", sans-serif !important; }
+  .wx-heading .fourth-heading {
+    color: #fff !important;
+    font-size: 3.5em;
+    margin-bottom: 25px; }
+  .wx-heading .heading-subtitle, .wx-heading p {
+    width: 80%;
+    margin: auto;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1.1em; }
+  .wx-heading .image img {
+    margin-top: 10px;
+    margin-bottom: 20px; }
+
+.no-subtitle .heading-subtitle, .no-subtitle p {
+  display: none; }
+
+.wx-heading.align-left .heading-subtitle {
+  text-align: left;
+  width: 100%;
+  font-size: 1.3em;
+  letter-spacing: inherit;
+  text-transform: capitalize;
+  font-family: "Roboto", sans-serif !important;
+  font-style: normal;
+  line-height: 24px; }
+
+.with-subtitle .heading-subtitle, .with-subtitle p {
+  display: none; }
+
+@media only screen and (max-width: 800px) {
+  .wx-heading .primary-heading,
+  .wx-heading .secondary-heading,
+  .wx-heading .third-heading,
+  .wx-heading .fourth-heading {
+    font-size: 1.5em !important;
+    margin-bottom: 10px; } }
+
+.wx-button.primary-button {
+  color: #fff !important;
+  background: #f36a22 !important;
+  border-radius: 100px;
+  -moz-border-radius: 100px;
+  display: inline-block;
+  padding: 10px 30px;
+  text-decoration: none;
+  display: block;
+  width: 80%;
+  margin: auto;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px; }
+  .wx-button.primary-button p {
+    margin: 0;
+    font-weight: 700;
+    color: #fff !important; }
+  .wx-button.primary-button:hover {
+    opacity: .3; }
+
+.wx-button.secondary-button {
+  border: transparent;
+  font-weight: 700;
+  padding: 15px 20px;
+  border-radius: 5px;
+  -moz-border-radius: 5px; }
+  .wx-button.secondary-button::before {
+    content: "\f095";
+    margin-right: 10px;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 1.3em; }
+
+.wx-button.third-button {
+  color: #fff !important;
+  background: #f36a22 !important;
+  display: inline-block;
+  padding: 5px 10px; }
+  .wx-button.third-button p {
+    display: inline-block;
+    margin: 0; }
+  .wx-button.third-button::after {
+    content: "\f178";
+    margin-left: 5px;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+  .wx-button.third-button:hover {
+    opacity: .6;
+    transform: translate(15%, 0);
+    -moz-transform: translate(15%, 0);
+    -webkit-transform: translate(15%, 0);
+    -o-transform: translate(15%, 0); }
+
+.text-image-wrapper {
+  margin-bottom: 25px;
+  position: relative;
+  overflow: hidden; }
+  .text-image-wrapper .text-image-holder {
+    position: relative;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .text-image-wrapper .text-image-holder::before {
+      width: 100%;
+      height: 100px;
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+48,000000+100&0+0,0.65+98 */
+      /* FF3.6-15 */
+      /* Chrome10-25,Safari5.1-6 */
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(48%, rgba(0, 0, 0, 0.32)), color-stop(98%, rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65)));
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.32) 48%, rgba(0, 0, 0, 0.65) 98%, rgba(0, 0, 0, 0.65) 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+      /* IE6-9 */
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      content: ''; }
+    .text-image-wrapper .text-image-holder img {
+      width: 100%; }
+    .text-image-wrapper .text-image-holder h4 {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      left: 0;
+      margin: 0;
+      padding: 20px;
+      text-transform: uppercase;
+      color: #fff !important;
+      font-size: 1.875em;
+      -webkit-transition: all 1s ease;
+      transition: all 1s ease;
+      font-weight: 500;
+      font-family: "Oswald", sans-serif !important; }
+    .text-image-wrapper .text-image-holder .overlay {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      opacity: 0; }
+      .text-image-wrapper .text-image-holder .overlay .overlay-holder {
+        width: 80%;
+        position: absolute;
+        top: 0;
+        height: 75px;
+        bottom: 0;
+        margin: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: #fff !important; }
+        .text-image-wrapper .text-image-holder .overlay .overlay-holder h5 {
+          text-transform: uppercase;
+          color: #f36a22 !important; }
+        .text-image-wrapper .text-image-holder .overlay .overlay-holder p {
+          display: inline;
+          color: #fff !important; }
+        .text-image-wrapper .text-image-holder .overlay .overlay-holder .description {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          line-height: 15px;
+          /* fallback */
+          max-height: 32px;
+          /* fallback */
+          -webkit-line-clamp: 2;
+          /* number of lines to show */
+          -webkit-box-orient: vertical;
+          font-size: .8em; }
+    .text-image-wrapper .text-image-holder:hover .overlay {
+      display: block;
+      opacity: 1; }
+    .text-image-wrapper .text-image-holder:hover h4 {
+      -webkit-transform: translate(0, 100%);
+              transform: translate(0, 100%); }
+
+.vc_col-sm-3 .text-image-wrapper .text-image-holder h4 {
+  font-size: 1.3em; }
+
+ul.wx-details {
+  width: 70%; }
+  ul.wx-details li {
+    font-size: 1.3em;
+    position: relative;
+    padding-left: 50px;
+    margin-bottom: 30px;
+    vertical-align: middle; }
+    ul.wx-details li:before {
+      display: none; }
+    ul.wx-details li a {
+      text-decoration: none;
+      color: #262626 !important; }
+      ul.wx-details li a:hover {
+        color: #f36a22 !important; }
+    ul.wx-details li i {
+      font-size: 1.2em;
+      display: inline-block; }
+    ul.wx-details li::after {
+      display: block;
+      clear: both;
+      content: ''; }

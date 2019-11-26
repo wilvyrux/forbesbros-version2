@@ -1,0 +1,23 @@
+$font-primary:'Futura Md BT' !important;
+$font-secondary:'Futura Md BT' !important;
+//FONT WEIGHT 
+$light:300;
+$medium:500;
+$regular:400;
+$bold:700;
+$semibold:600;
+@font-face {
+    font-family: 'Futura Md BT';
+    src: url('css/fonts/FuturaBT-Medium.eot');
+    src: url('css/fonts/FuturaBT-Medium.eot?#iefix') format('embedded-opentype'), url('css/fonts/FuturaBT-Medium.woff2') format('woff2'), url('css/fonts/FuturaBT-Medium.woff') format('woff'), url('css/fonts/FuturaBT-Medium.ttf') format('truetype'), url('css/fonts/FuturaBT-Medium.svg#FuturaBT-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura Md BT';
+    src: url('css/fonts/FuturaBT-Bold.eot');
+    src: url('css/fonts/FuturaBT-Bold.eot?#iefix') format('embedded-opentype'), url('css/fonts/FuturaBT-Bold.woff2') format('woff2'), url('css/fonts/FuturaBT-Bold.woff') format('woff'), url('css/fonts/FuturaBT-Bold.ttf') format('truetype'), url('css/fonts/FuturaBT-Bold.svg#FuturaBT-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}

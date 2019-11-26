@@ -1,0 +1,31 @@
+/******************CSS INJECTION 
+ ***********************/
+
+
+/***
+Date : 
+Web Designer: William L. Carrasca Jr.
+Company: Spiderowls Web Design Solution
+Email: spiderowls@gmail.com 
+Contacts: +639212632325
+Skype: williamcarrascajr
+ ***/
+
+// Modules and Variables
+@import "modules/mixin";
+@import "modules/colors";
+@import "modules/typography";
+// Partials
+@import "partials/resets";
+@import "partials/buttons";
+@import "partials/header";
+@import "partials/footer";
+@import "partials/sidebar";
+@import "partials/forms";
+@import "partials/pages";
+@import "partials/modal";
+@import "partials/singlepage";
+@import "partials/breadcrumbs";
+@import "partials/headings";
+@import "partials/accordion";
+@import "partials/wx-shortcode/allwxshortcodes";

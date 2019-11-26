@@ -1,0 +1,22 @@
+.vc_btn3.vc_btn3-color-warning.vc_btn3-style-modern {
+    background: $color-orange;
+    &:hover {
+        background: $color-darkorange;
+    }
+}
+
+.services--grid {
+    .vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-modern.vc_btn3-color-warning {
+        margin-top: 30%;
+    }
+    .vc_custom_heading h3 {
+        font-size: 1.3em;
+    }
+}
+
+.black-text {
+    color: $color-black;
+    p {
+        color: $color-black;
+    }
+}

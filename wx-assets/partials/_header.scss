@@ -1,0 +1,31 @@
+header {
+    &.header {
+        border: 0;
+        &.headroom {
+            &.headroom {
+                &--not-top {
+                    @include t-black(.9);
+                    border: 0;
+                }
+            }
+        }
+    }
+    #site-navigation {
+        .menu {
+            >ul {
+                >li {
+                    &:before,
+                    &:after {
+                        display: none !important;
+                    }
+                    a {
+                        @include transition(.5s);
+                        &:hover {
+                            color: $color-orange;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

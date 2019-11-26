@@ -1,0 +1,56 @@
+//CALENDAR
+.fc-day-grid-event.fc-h-event.fc-event.fc-start.fc-end.company-event-entry {
+    background: $color-primary;
+    border: 0;
+    padding: 5px;
+    cursor: pointer;
+    display: block;
+}
+
+#colorbox {
+    left: 0 !important;
+    position: fixed !important;
+    width: 100% !important;
+    height: 100% !important;
+    right: 0;
+    margin: auto !important;
+    top: 20px !important;
+    overflow: scroll;
+    @include t-black(.8);
+    #cboxWrapper {
+        width: 80% !important;
+        outline: 1px solid;
+        margin: auto;
+        left: 0;
+        right: 0;
+        padding-top: 5%;
+        height: auto !important;
+        #cboxContent {
+            width: 100% !important;
+            height: 100% !important;
+            div {
+                width: 100% !important;
+            }
+            #cboxLoadedContent {
+                width: 100%;
+                padding: 20px;
+            }
+        }
+    }
+}
+
+.company-calendar {
+    .fc-left {
+        h2 {
+            font-size: 2.5em;
+            font-family: $font-primary;
+            text-transform: uppercase;
+        }
+    }
+    .fc-day-header.fc-widget-header {
+        background: $color-secondary;
+        color: $color-white;
+        padding: 10px;
+        text-transform: uppercase;
+    }
+}

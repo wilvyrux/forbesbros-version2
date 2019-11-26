@@ -1,0 +1,149 @@
+
+//FILEUPLOAD
+
+#file-manager-wrapper {
+    ul {
+        margin: 0;
+        li {
+            &::before {
+                display: none;
+            }
+        }
+    }
+}
+
+.file-uploader-wrap {
+    .fileinput-button {
+        width: 100% !important;
+        margin-bottom: 20px !important;
+        background: $color-secondary;
+    }
+}
+
+.page-bar {
+//    display: none;
+    background: $color-primary;
+    margin-bottom: 20px !important;
+    
+    ul {
+        background: transparent;
+        
+        li {
+            margin-right: 10px;
+            
+            a {
+                color: $color-white;
+                font-family: $font-primary;
+                font-size: 1.5em;
+                text-decoration: none;
+                
+                &:hover {
+                    color: $color-secondary; 
+                    
+                }
+                
+                i {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+    
+}
+
+.folder-file-container {
+    .file-list-items {
+        li {
+            width: 25%;
+            display: inline-block;
+            // float: left;
+            text-align: left;
+             padding: 10px;
+            position: relative;
+            margin-bottom: 20px;
+
+            
+            a {
+                text-decoration: none;
+            }
+            
+            .status {
+                position: absolute;
+                top: 0;
+                background: $color-secondary;
+                width: 20px;
+                text-align: center;
+                
+                a {
+                    color: $color-white;  
+                }
+            }
+            
+            
+            .file-name {
+                font-size: 1.2em;
+                text-transform: uppercase;
+                color: $color-white;
+                background: $color-dark;
+                text-align: left;
+                clear: both;
+                padding: 2px 10px;
+                font-size: .8em;
+
+            }
+
+
+            a.file-element {
+                display: block;
+                overflow: auto;
+                padding: 10px;
+                @include border-radius(10px);
+                border: 1px solid $color-dark;
+                cursor: pointer;
+
+                
+
+            }
+            
+            .file-thumb {
+                width: 50px;
+                margin: auto;
+                height: 50px;
+                float: left;
+                margin-right: 10px;
+                
+                img {
+                    height: 100%;
+                }
+            }
+            
+            .file-icon {
+                i {
+                    display: none;
+                }
+            }
+            
+            .file-meta-info {
+                font-size: .7em;
+                padding: 2px;
+                
+                span {
+                  display: block;
+                    color: $color-secondary;
+                }
+            }
+            
+        }
+
+
+        &:hover {
+            opacity:.6;
+        }
+        
+        &::after {
+            display: block;
+            content: '';
+            clear: both;
+        }
+    }
+}

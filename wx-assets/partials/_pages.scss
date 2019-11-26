@@ -1,0 +1,677 @@
+    .project-taxonomy,
+    .fp-taxonomy-wrapper {
+        @include flex;
+        @include flex-align-items(center);
+        @include flex-justify-content(center);
+        .fpt-holder {
+            padding: 10px;
+            img {
+                width: 40px;
+                margin-right: 6px;
+            }
+        }
+    }
+    
+    .fp-wrapper {
+        @include flex;
+        @include flex-align-items(flex-start);
+        @include flex-justify-content(center);
+        margin: 50px 0;
+        .fp-inner-holder {
+            width: calc(100%/4);
+        }
+    }
+    
+    .forbes-project {
+        &__items {
+            height: 200px;
+            overflow: hidden;
+            @include flex;
+            @include flex-align-items(flex-end);
+            padding: 10px;
+            background-size: cover !important;
+            position: relative;
+            width: calc(100%/3);
+            margin-bottom: 20px;
+            &:before {
+                width: 100%;
+                height: 100%;
+                content: '';
+                @include t-black(.6);
+                left: 0;
+                top: 0;
+                position: absolute;
+                z-index: 1;
+            }
+            a {
+                @include flex;
+                @include flex-align-items(flex-end);
+                width: 100%;
+                font-size: .9em;
+                padding: 10px;
+                text-align: left;
+                position: relative;
+                z-index: 2;
+                color: $color-white;
+            }
+        }
+    }
+    
+    .services-display {
+        margin-bottom: 0 !important;
+        .title-holder {
+            margin-bottom: 20px !important;
+            p {
+                font-size: 1.3em;
+                text-transform: uppercase;
+                color: $color-black;
+            }
+        }
+        &__items {
+            @include flex;
+            @include flex-align-items(flex-end);
+            @include flex-justify-content(center);
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            &:focus,
+            &:hover {
+                .services-overlay {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+            .services-overlay {
+                @include flex;
+                @include flex-align-items(center);
+                @include flex-justify-content(center);
+                position: absolute;
+                @include transition(.4s);
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                @include t-black(.8);
+                opacity: 0;
+                visibility: hidden;
+                a {
+                    display: inline-block;
+                    padding: 10px 25px;
+                    background: $color-orange;
+                    color: $color-white;
+                }
+            }
+        }
+    }
+    
+    // .white-cap.wpb_column {
+    //     >div {
+    //         width: 250px;
+    //         height: 125%;
+    //         position: absolute;
+    //         z-index: 2;
+    //         content: '';
+    //         background: #fff;
+    //         top: -85px;
+    //         left: -102px;
+    //         transform: rotate(20deg);
+    //     }
+    // }
+    .white-cap {
+        overflow: hidden;
+        &:before {
+            content: '';
+            width: 156px;
+            background: $color-white;
+            height: 100%;
+            position: absolute;
+            transform: rotate(22deg);
+            left: -57px;
+            top: 0px;
+        }
+    }
+    
+    .bottom-home {
+        position: relative;
+        height: 670px;
+        &:after {
+            content: '';
+            width: 100%;
+            height: 500px;
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,000000+100&0+0,1+100 */
+            background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 100%);
+            /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 100%);
+            /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 100%);
+            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            // filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#000000', GradientType=0);
+            /* IE6-9 */
+            bottom: -2px;
+            position: absolute;
+            left: 0;
+            z-index: 1;
+        }
+    }
+    
+    .quote__top.wpb_column.vc_column_container.vc_col-sm-12 {
+        position: absolute;
+        top: -86px;
+        margin: auto;
+        left: 0;
+        right: 0;
+        max-width: 50%;
+        color: $color-black;
+    }
+    
+    .quote__top.wpb_column.vc_column_container.vc_col-sm-12 p {
+        color: $color-black;
+    }
+    
+    .interested-div h3,
+    .interested-div p,
+    .interested-div a {
+        color: $color-white !important;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .interested-div a:hover {
+        // color: #f44d0c !important;
+        color: $color-darkorange;
+    }
+    
+    .white-cover {
+        position: relative;
+        oveflow: hidden;
+        &:before {
+            content: '';
+            background: url('http://development.spiderowls.com/forbesbros/wp-content/uploads/2019/11/tail-white.png');
+            position: absolute;
+            width: 130px;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-size: 100% 100%;
+        }
+    }
+    
+    .container.services-single-container {
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    .services-single-content {
+        @include flex;
+        &__item {
+            width: calc(100%/2);
+        }
+        &__left {
+            padding: 80px;
+            ul {
+                li {
+                    position: relative;
+                    font-size: 1.2em;
+                    margin-bottom: 5px;
+                    &:marker {
+                        display: none;
+                    }
+                    &:before {
+                        position: absolute;
+                        top: 8px;
+                        left: -20px;
+                        width: 7px;
+                        height: 7px;
+                        background: $color-orange;
+                        content: '';
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    
+    #content .wpb_alert p:last-child,
+    #content .wpb_text_column :last-child,
+    #content .wpb_text_column p:last-child,
+    .wpb_alert p:last-child,
+    .wpb_text_column :last-child,
+    .wpb_text_column p:last-child {
+        margin-bottom: inherit;
+    }
+    
+    .icons {
+        display: none !important;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        right: 15px;
+        bottom: 0;
+    }
+    
+    // // transmission
+    // #tab-1572620164197-5-9 {
+    //     .transmission_icon {
+    //         display: block !important;
+    //     }
+    // }
+    // // telcom
+    // #tab-1572620150031-4-4 {
+    //     .telecom_icon {
+    //         display: block !important;
+    //     }
+    // }
+    // #tab-1572620143749-3-7 {
+    //     .substation_icon {
+    //         display: block !important;
+    //     }
+    // }
+    // #tab-1572620126383-2-0 {
+    //     .renewables_icon {
+    //         display: block !important;
+    //     }
+    // }
+    // #tab-bf57f4ae-3cda-2 {
+    //     .distribution_icon {
+    //         display: block !important;
+    //     }
+    // }
+    // .ui-tabs-panel {
+    //     background: transparent !important;
+    // }
+    // .ui-tabs-nav {
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     margin-bottom: 20px !important;
+    //     li {
+    //         a {
+    //             font-size: 1.1em;
+    //         }
+    //     }
+    // }
+    // #ui-id-2 {
+    //     @include flex;
+    //     @include flex-align-items(center);
+    //     &:before {
+    //         content: '';
+    //         width: 35px;
+    //         height: 35px;
+    //         background: url('http://development.spiderowls.com/forbesbros/wp-content/uploads/2019/11/Wooden_Pole_MO.png');
+    //         display: inline-block;
+    //         margin-right: 10px;
+    //         background-size: cover !important;
+    //     }
+    // }
+    // #ui-id-3 {
+    //     @include flex;
+    //     @include flex-align-items(center);
+    //     &:before {
+    //         content: '';
+    //         width: 35px;
+    //         height: 35px;
+    //         background: url('http://development.spiderowls.com/forbesbros/wp-content/uploads/2019/11/Wind_2_MO.png');
+    //         display: inline-block;
+    //         margin-right: 10px;
+    //         background-size: cover !important;
+    //     }
+    // }
+    // #ui-id-4 {
+    //     @include flex;
+    //     @include flex-align-items(center);
+    //     &:before {
+    //         content: '';
+    //         width: 35px;
+    //         height: 35px;
+    //         background: url('http://development.spiderowls.com/forbesbros/wp-content/uploads/2019/11/Substation.png');
+    //         display: inline-block;
+    //         margin-right: 10px;
+    //         background-size: cover !important;
+    //     }
+    // }
+    // #ui-id-5 {
+    //     @include flex;
+    //     @include flex-align-items(center);
+    //     &:before {
+    //         content: '';
+    //         width: 35px;
+    //         height: 35px;
+    //         background: url('http://development.spiderowls.com/forbesbros/wp-content/uploads/2019/11/Telecom_2_MO.png');
+    //         display: inline-block;
+    //         margin-right: 10px;
+    //         background-size: cover !important;
+    //     }
+    // }
+    // #ui-id-6 {
+    //     @include flex;
+    //     @include flex-align-items(center);
+    //     &:before {
+    //         content: '';
+    //         width: 35px;
+    //         height: 35px;
+    //         background: url('http://development.spiderowls.com/forbesbros/wp-content/uploads/2019/11/Transmission_Tower_MO.png');
+    //         display: inline-block;
+    //         margin-right: 10px;
+    //         background-size: cover !important;
+    //     }
+    // }
+    .projects-container {
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    .project-single-details {
+        padding: 2% 5%;
+        // h3 {
+        //     font-size: 1.2em;
+        //     font-weight: normal;
+        //     line-height: 25px;
+        // }
+        &__information {
+            padding: 0 !important;
+            margin: 0 !important;
+            margin-bottom: 25px !important;
+            li {
+                margin-bottom: 15px;
+                font-size: 1.3em;
+                color: #999;
+            }
+            strong {
+                color: $color-black;
+                margin-right: 9px;
+            }
+        }
+        &__description {
+            p {
+                color: #999;
+                font-size: 1.2em;
+            }
+            ul {
+                li {
+                    position: relative;
+                    font-size: 1.2em;
+                    margin-bottom: 5px;
+                    &:marker {
+                        display: none;
+                    }
+                    &:before {
+                        position: absolute;
+                        top: 8px;
+                        left: -20px;
+                        width: 7px;
+                        height: 7px;
+                        background: $color-orange;
+                        content: '';
+                        display: block;
+                    }
+                }
+            }
+        }
+        &__category {
+            margin: 50px 0px;
+            img {
+                width: 45px;
+            }
+        }
+        &__title {
+            font-size: 2.2em;
+            border-bottom: 1px solid $color-orange;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+        // .project-category {
+        //     margin: 50px 0px;
+        //     img {
+        //         width: 45px;
+        //     }
+        // }
+        &__image {
+            &--holder {
+                height: auto;
+                overflow: auto;
+                height: auto;
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+    
+    .bullets {
+        ul {
+            li {
+                position: relative;
+                font-size: 1.2em;
+                margin-bottom: 5px;
+                &:marker {
+                    display: none;
+                }
+                &:before {
+                    position: absolute;
+                    top: 8px;
+                    left: -20px;
+                    width: 7px;
+                    height: 7px;
+                    background: $color-orange;
+                    content: '';
+                    display: block;
+                }
+            }
+        }
+    }
+    
+    .services {
+        &__icons {
+            img {
+                opacity: .5;
+                @include transition(.3s);
+            }
+            a {
+                opacity: 1 !important;
+                &:hover {
+                    img {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+    
+    .paragraph-text {
+        .wpb_wrapper {
+            p {
+                font-size: 1.5em;
+                color: $color-black;
+            }
+        }
+    }
+    
+    // .fp-inner-holder .img-holder {
+    //     overflow: hidden;
+    //     height: 200px;
+    //     position: relative;
+    //     background-size: cover;
+    //     background-position: center;
+    // }
+    // .fp-inner-holder .img-holder .attachment-thumbnail.size-thumbnail {
+    //     position: absolute;
+    //     right: 5px;
+    //     bottom: 5px;
+    //     width: 40px;
+    //     height: 40px;
+    // }
+    // .fp-taxonomy-wrapper .fpt-holder button {
+    //     background: transparent;
+    //     border: 0;
+    // }
+    // .fp-taxonomy-wrapper .fpt-holder {
+    //     width: calc(100%/4);
+    // }
+    .project-category-filter {
+        @include flex;
+        position: relative;
+        bottom: -30px;
+        .fpt-holder {
+            width: calc(100%/4);
+            margin-bottom: 20px;
+            &.active {
+                img {
+                    opacity: 1;
+                }
+                button {
+                    color: $color-orange;
+                }
+            }
+            button {
+                background: transparent;
+                border: 0;
+            }
+            img {
+                width: 40px;
+                opacity: .6;
+                @include transition(.3s);
+            }
+            &:hover {
+                img {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    
+    .project-display-thumbnail {
+        >div {
+            padding: 0;
+            margin-bottom: 40px;
+        }
+        .img-holder {
+            overflow: hidden;
+            height: 250px;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            .attachment-thumbnail.size-thumbnail {
+                position: absolute;
+                right: 5px;
+                bottom: 5px;
+                width: 40px;
+                height: 40px;
+                display: none;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                @include t-white(.2);
+            }
+            &:hover {
+                .fp-overlay {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+        .title-holder {
+            margin: 0 !important;
+            padding-top: 10px;
+            @include flex;
+            @include flex-align-items(flex-start);
+            &__image {
+                img {
+                    width: 50px;
+                    height: 50px;
+                    margin-right: 10px;
+                }
+            }
+            &__description {}
+            h3 {
+                font-size: 1.4em;
+                margin: 0;
+            }
+        }
+        .fp-overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include t-black(.8);
+            opacity: 0;
+            visibility: hidden;
+            @include transition(.5s);
+            a {
+                display: inline-block;
+                padding: 10px 25px;
+                background: $color-orange;
+                color: $color-white;
+            }
+        }
+    }
+    
+    .related-project-list {
+        .title {
+            max-width: 1400px;
+            margin: 20px auto;
+        }
+        .project-tile {
+            width: 20%;
+            display: block;
+            float: left;
+            height: 170px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            &:hover {
+                .project-overlay {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+            .project-overlay {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @include t-black(.8);
+                opacity: 0;
+                visibility: hidden;
+                @include transition(.5s);
+                a {
+                    display: inline-block;
+                    padding: 10px 25px;
+                    background: $color-orange;
+                    color: $color-white;
+                    font-size: .8em;
+                }
+            }
+        }
+    }
+    
+    .contact-us-section {
+        &__left {
+            ul {
+                li {
+                    font-size: 1.5em;
+                    margin-bottom: 15px;
+                    @include flex;
+                    strong {
+                        width: 180px;
+                        color: $color-black;
+                    }
+                    br {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
