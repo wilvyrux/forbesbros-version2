@@ -23,7 +23,8 @@ Skype: williamcarrascajr
   font-style: normal; }
 
 body {
-  font-family: "Futura Md BT", sans-serif !important; }
+  font-family: "Futura Md BT", sans-serif !important;
+  background: #000000 !important; }
 
 ul {
   list-style: none; }
@@ -41,7 +42,8 @@ a {
 
 p {
   font-family: "Futura Md BT", sans-serif !important;
-  font-size: 1em; }
+  font-size: 1em;
+  color: #444; }
 
 h1,
 h2,
@@ -71,7 +73,7 @@ h5 {
 header.header {
   border: 0; }
   header.header.headroom.headroom--not-top {
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.9) !important;
     border: 0; }
 
 header #site-navigation .menu > ul > li:before, header #site-navigation .menu > ul > li:after {
@@ -275,7 +277,7 @@ header #site-navigation .menu > ul > li.current-menu-item a {
     width: 100%;
     height: 100%;
     content: '';
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.6) !important;
     left: 0;
     top: 0;
     position: absolute;
@@ -362,7 +364,7 @@ header #site-navigation .menu > ul > li.current-menu-item a {
       top: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.8);
+      background: rgba(0, 0, 0, 0.8) !important;
       opacity: 0;
       visibility: hidden; }
       .services-display__image .services-overlay a {
@@ -471,6 +473,9 @@ header #site-navigation .menu > ul > li.current-menu-item a {
   max-width: 100%;
   padding: 0; }
 
+.forbes-services {
+  margin-bottom: 0; }
+
 .services-single-content {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
@@ -485,16 +490,6 @@ header #site-navigation .menu > ul > li.current-menu-item a {
       background-size: cover;
       background-position: center;
       position: relative; }
-      .services-single-content__item--holder:before {
-        content: '';
-        background: url("../custom-php/tail-white.png");
-        position: absolute;
-        width: 130px;
-        height: 100%;
-        left: 0;
-        top: 0;
-        background-size: 100% 100%;
-        z-index: 9; }
   .services-single-content__left {
     padding: 80px;
     padding-bottom: 0;
@@ -503,9 +498,11 @@ header #site-navigation .menu > ul > li.current-menu-item a {
     display: flex !important;
     -ms-flex-wrap: wrap !important;
     flex-wrap: wrap !important;
-    -webkit-box-align: flex-end;
-    -ms-flex-align: flex-end;
-    align-items: flex-end; }
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px; }
     .services-single-content__left .wpb_text_column.wpb_content_element,
     .services-single-content__left .wpb_wrapper {
       margin-bottom: 0 !important; }
@@ -555,9 +552,24 @@ header #site-navigation .menu > ul > li.current-menu-item a {
 .orange-bar div {
   margin-bottom: 0 !important; }
 
+.project-single__background {
+  background-size: cover !important;
+  position: relative; }
+  .project-single__background:before {
+    background: rgba(0, 0, 0, 0.9) !important;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    content: '';
+    height: 100%; }
+
 .project-single-details {
   padding: 2% 5%;
   padding-bottom: 0; }
+  .project-single-details__holder {
+    background: #ececec;
+    padding: 25px; }
   .project-single-details__information {
     padding: 0 !important;
     margin: 0 !important;
@@ -583,7 +595,7 @@ header #site-navigation .menu > ul > li.current-menu-item a {
       color: #000000 !important;
       margin-right: 9px; }
   .project-single-details__description p {
-    color: #999;
+    color: #fff !important;
     font-size: 1em; }
   .project-single-details__description ul li {
     position: relative;
@@ -610,28 +622,37 @@ header #site-navigation .menu > ul > li.current-menu-item a {
     border-bottom: 1px solid #e54c37 !important;
     padding-bottom: 10px;
     margin-bottom: 25px; }
-  .project-single-details__image--holder {
-    height: auto;
-    overflow: auto;
-    height: auto;
-    overflow: hidden;
-    height: 100% !important;
-    background-size: cover;
+  .project-single-details__featured {
+    height: 300px;
+    background-size: contain;
     background-position: center;
-    position: relative; }
-    .project-single-details__image--holder:before {
-      content: '';
-      background: url("../custom-php/tail-white.png");
-      position: absolute;
-      width: 130px;
-      height: 100%;
-      left: 0;
-      top: 0;
-      background-size: 100% 100%;
-      z-index: 9; }
-    .project-single-details__image--holder img {
-      width: 100%;
-      height: auto; }
+    background-repeat: no-repeat;
+    margin-bottom: 20px; }
+  .project-single-details__image {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-right: 95px !important;
+    padding-top: 50px;
+    padding-bottom: 50px; }
+    .project-single-details__image--holder {
+      height: auto;
+      overflow: auto;
+      height: auto;
+      overflow: hidden;
+      height: 350px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      margin-bottom: 20px; }
+      .project-single-details__image--holder img {
+        width: 100%;
+        height: auto; }
 
 .bullets ul li {
   position: relative;
@@ -767,7 +788,7 @@ header #site-navigation .menu > ul > li.current-menu-item a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.8) !important;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all 0.5s ease;
@@ -809,7 +830,7 @@ header #site-navigation .menu > ul > li.current-menu-item a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.8) !important;
     opacity: 0;
     visibility: hidden;
     -webkit-transition: all 0.5s ease;
@@ -848,7 +869,7 @@ header #site-navigation .menu > ul > li.current-menu-item a {
   position: absolute;
   left: 0;
   top: 0;
-  background: rgba(0, 0, 0, 0.3); }
+  background: rgba(0, 0, 0, 0.3) !important; }
 
 .margin-bottom-0 div {
   margin-bottom: 0 !important; }
@@ -858,6 +879,26 @@ div#careerModal {
 
 .we-build .vc_column-inner {
   padding-top: 0 !important; }
+
+.page-big-title.center-style {
+  margin-bottom: 0 !important;
+  height: 300px; }
+  .page-big-title.center-style h2 {
+    -webkit-transform: uppercase;
+            transform: uppercase; }
+
+.box-black {
+  background: rgba(0, 0, 0, 0.9) !important;
+  font-size: .8em;
+  color: #fff !important !important;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  bottom: 0;
+  margin-bottom: -20px; }
+  .box-black p {
+    color: #fff !important; }
 
 .dwqa-breadcrumbs {
   background: #262626 !important; }
@@ -1161,7 +1202,7 @@ h3.vc_custom_heading {
       top: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.8);
+      background: rgba(0, 0, 0, 0.8) !important;
       -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease;
       opacity: 0; }

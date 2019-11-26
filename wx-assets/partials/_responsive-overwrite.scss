@@ -1,0 +1,38 @@
+@media only screen and (max-width:768px) {
+    .services__icons ul li {
+        padding: 10px;
+        text-align: center;
+        width: calc(100%/3) !important;
+    }
+    h2.vc_custom_heading {
+        font-size: 2em;
+    }
+    .white-cover {
+        height: 400px;
+    }
+    .quote__top.wpb_column.vc_column_container.vc_col-sm-12 {
+        max-width: 95%;
+    }
+    .fp-wrapper .fp-inner-holder {
+        width: 50%;
+    }
+    .project-category-filter .fpt-holder {
+        width: 50%;
+    }
+    .related-project-list .project-tile {
+        width: 50%;
+    }
+    div#slider-1-layer-1 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .fp-wrapper .fp-inner-holder,
+    .project-category-filter .fpt-holder {
+        width: 100%;
+    }
+    .related-project-list .project-tile {
+        width: 100%;
+    }
+}

@@ -11,7 +11,7 @@
 
 //BACKGROUND RGBA COLORS
 @mixin t-black($opacity:.6) {
-    background: rgba(0, 0, 0, $opacity);
+    background: rgba(0, 0, 0, $opacity) !important;
 }
 
 @mixin t-white($opacity:.9) {

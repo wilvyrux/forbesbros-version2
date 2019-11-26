@@ -20,7 +20,14 @@ header {
                     }
                     a {
                         @include transition(.5s);
+                        font-family: $font-primary;
+                        font-weight: bold;
                         &:hover {
+                            color: $color-orange;
+                        }
+                    }
+                    &.current-menu-item {
+                        a {
                             color: $color-orange;
                         }
                     }

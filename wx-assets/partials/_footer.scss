@@ -17,6 +17,7 @@
         flex: 0 0 100%;
         text-align: center;
         .widget_nav_menu {
+            margin-bottom: 0 !important;
             .menu {
                 @include flex;
                 @include flex-align-items(center);
@@ -53,4 +54,18 @@
             }
         }
     }
+    #menu-footer-menu {
+        li {
+            &:last-child {
+                a {
+                    pointer-events: none;
+                }
+            }
+        }
+    }
+}
+
+.footer-column-container {
+    @include flex;
+    @include flex-justify-content(center);
 }

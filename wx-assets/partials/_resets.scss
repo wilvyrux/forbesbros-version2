@@ -1,7 +1,8 @@
 body {
     font-family: $font-secondary;
-    font-size: 14px;
-    font-weight: 500 !important;
+    // font-size: 14px;
+    background: $color-black;
+    // font-weight: 500 !important;
 }
 
 ul {
@@ -21,6 +22,12 @@ a {
     letter-spacing: inherit !important;
 }
 
+p {
+    font-family: $font-primary;
+    font-size: 1em;
+    color: #444;
+}
+
 // * {
 //     @include transition(.3s);
 // }
@@ -30,4 +37,5 @@ h3,
 h4,
 h5 {
     font-weight: bold;
+    font-family: $font-secondary;
 }

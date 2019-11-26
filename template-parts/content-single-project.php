@@ -10,7 +10,8 @@ $tm_dione_post_hide_featured_image = get_post_meta( get_the_ID(), "post_hide_fea
 
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'post blog-entry' ); ?>>
     
-    <div class="row project-single--row">
+    <?php $img = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'full' ); ?>
+    <div class="row project-single--row project-single__background" style="background-image: url('<?php echo $img[0]; ?>');">
         <div class="col-md-6 post-meta project-single-details">
             <!--project-single-details__holder-->
             <div class="project-single-details__holder">
@@ -18,6 +19,11 @@ $tm_dione_post_hide_featured_image = get_post_meta( get_the_ID(), "post_hide_fea
                          <?php forbes_project_navigation(); ?>
                     </div>
                     
+                    <?php $img = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'full' ); ?>
+                    <div class="project-single-details__featured" style="background-image: url('<?php echo $img[0]; ?>');">
+                          <?php //the_post_thumbnail( 'full' ); ?>
+                    </div>
+
                     <div class="project-single-details__contents">
                           <h2 class="project-single-details__title"><?php the_title() ?></h2>
                     
@@ -32,10 +38,7 @@ $tm_dione_post_hide_featured_image = get_post_meta( get_the_ID(), "post_hide_fea
                             <!--<h3></h3>-->
                             <!--<h3></h3>-->
                             <!--<h3></h3>-->
-                            <div class="project-single-details__description">
-                                 <?php the_content(); ?>
-                                
-                            </div>
+                           
                         
                     </div>
                   
@@ -92,9 +95,14 @@ $tm_dione_post_hide_featured_image = get_post_meta( get_the_ID(), "post_hide_fea
             <?php if ( has_post_thumbnail() && $tm_dione_post_hide_featured_image != 'on' ) { ?>
                 <div class="post-thumb col-md-6 project-single-details__image">
                     <!--<a href="<?php //echo get_permalink(); ?>"></a>-->
-                       <?php $img = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'full' ); ?>
-                    <div class="project-single-details__image--holder" style="background-image: url('<?php echo $img[0]; ?>');">
+                    
+                    <?php //$img = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'full' ); ?>
+                    <!-- <div class="project-single-details__image--holder" style="background-image: url('<?php echo $img[0]; ?>');">
                           <?php //the_post_thumbnail( 'full' ); ?>
+                    </div> -->
+
+                    <div class="project-single-details__description">
+                            <?php the_content(); ?>
                     </div>
                   
                 </div>
