@@ -24,17 +24,6 @@ $tm_dione_post_hide_featured_image = get_post_meta( get_the_ID(), "post_hide_fea
                           <?php //the_post_thumbnail( 'full' ); ?>
                     </div>
 
-                    <p class="project-category project-single-details__category">
-                        <?php
-                            $cat = get_the_terms($post->ID, 'project-taxonomy');
-        
-                            if(isset($cat[0])) {
-                                $cat_image_id = get_term_meta($cat[0]->term_id, 'category-image-id', true);
-                                echo wp_get_attachment_image($cat_image_id, 'thumbnail') . ' - ' . $cat[0]->name;
-                            }
-                        ?>
-                    </p>
-
                     <div class="project-single-details__contents">
                           <h2 class="project-single-details__title"><?php the_title() ?></h2>
                     
@@ -54,7 +43,16 @@ $tm_dione_post_hide_featured_image = get_post_meta( get_the_ID(), "post_hide_fea
                     </div>
                   
                     
-                   
+                    <p class="project-category project-single-details__category">
+                        <?php
+                            $cat = get_the_terms($post->ID, 'project-taxonomy');
+        
+                            if(isset($cat[0])) {
+                                $cat_image_id = get_term_meta($cat[0]->term_id, 'category-image-id', true);
+                                echo wp_get_attachment_image($cat_image_id, 'thumbnail') . ' - ' . $cat[0]->name;
+                            }
+                        ?>
+                    </p>
                  <!--project-single-details__holder-->
             </div>
             

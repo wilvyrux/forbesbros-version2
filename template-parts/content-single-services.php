@@ -57,20 +57,23 @@ $tm_dione_post_hide_featured_image = get_post_meta( get_the_ID(), "post_hide_fea
 
     
     <div class="services-single-content">
-          <div class="services-single-content__left services-single-content__item">
-                  <div>
-                      <h2><?php the_title() ?></h2>
-                    <?php the_content(); ?>
-                  </div>
-                </div>
-        
-            <div class="services-single-content__right services-single-content__item">
+
+        <div class="services-single-content__right services-single-content__item col-lg-4">
                 <?php $img = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'full' ); ?>
                 <div class="services-single-content__item--holder" style="background-image: url('<?php echo $img[0]; ?>');">
                      <?php //the_post_thumbnail( 'full' ); ?>
                 </div>
              
             </div>
+
+          <div class="services-single-content__left services-single-content__item col-lg-8">
+                  <div>
+                      <h2><?php the_title() ?></h2>
+                    <?php the_content(); ?>
+                  </div>
+                </div>
+        
+            
               
     </div>
   
